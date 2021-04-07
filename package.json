@@ -1,0 +1,15 @@
+{
+    "name": "server_boiler_plate_vaibhav",
+    "version": "1.0.0",
+    "description": "server_boiler_plate_for_login_and_registration",
+    "main": "server.js",
+    "scripts": {
+        "start": "nodemon server.js"
+    },
+    "author": "vaibhav",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.17.1",
+        "mongoose": "^5.12.3"
+    }
+}
