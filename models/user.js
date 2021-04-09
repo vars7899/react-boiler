@@ -1,14 +1,14 @@
 const mongoose = require("mongoose");
+
 const userSchema = mongoose.Schema({
     name: {
         type: String,
         maxLength: 50,
-        required: true,
     },
     email: {
         type: String,
         trim: true, //it will remove any space in input
-        unique: 1, //1 means true
+        unique: true, //1 means true
     },
     password: {
         type: String,
@@ -30,4 +30,5 @@ const userSchema = mongoose.Schema({
     },
 });
 
-module.exports = mongoose.model("User", userSchema);
+const User = mongoose.model("user", userSchema);
+module.exports = { User };
